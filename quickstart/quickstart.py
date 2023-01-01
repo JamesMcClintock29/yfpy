@@ -27,10 +27,10 @@ Example vars using public Yahoo leagues still require auth through a personal Ya
 load_dotenv()
 
 # set directory location of private.json for authentication
-auth_dir = Path(__file__).parent
+auth_dir = Path(C:\Users\James\Documents\GitHub\yfpyREAL\test\integration).parent
 
 # set target directory for data output
-data_dir = Path(__file__).parent / "output"
+data_dir = Path(C:\Users\James\Documents\Yahoo Fantasy Data).parent / "output"
 
 # create YFPY Data instance for saving/loading data
 data = Data(data_dir)
@@ -40,20 +40,21 @@ data = Data(data_dir)
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # set desired season year
-season = 2021
+season = 2022
 
 # set desired week
 chosen_week = 1
 
 # set desired date
-chosen_date = "2013-04-15"  # NHL - 2013 (for 2012)
+chosen_date = "2022-30-22"  # NHL - 2013 (for 2012)
 # chosen_date = "2013-04-16"  # NHL - 2013
 # chosen_date = "2021-10-25"  # NHL - 2021
 # chosen_date = "2021-04-01"  # MLB - 2021
 # chosen_date = "2022-04-10"  # MLB - 2022
 
 # set desired Yahoo Fantasy Sports game code
-game_code = "nfl"  # NFL
+game_code = "NBA"  # NBA
+# game_code = "nfl"  # NFL
 # game_code = "nhl"  # NHL
 # game_code = "mlb"  # MLB
 
@@ -83,17 +84,18 @@ game_key = "406"  # NFL - 2021
 # league_id = "907359"  # NFL - 2015 (testing for league with divisions)
 # league_id = "79230"  # NFL - 2019
 # league_id = "655434"  # NFL - 2020
-league_id = "413954"  # NFL - 2021
+# league_id = "413954"  # NFL - 2021
 # league_id = "69624"  # NHL - 2012
 # league_id = "101592"  # NHL - 2021
 # league_id = "40134"  # MLB - 2021
+league_id = "53194"  # Send Nudes Fantasy League
 
 # set desired team ID within desired league
-team_id = 1  # NFL
+team_id = 1  # NBA
 # team_id = 2  # NHL (2012)
 
 # set desired team name within desired league
-team_name = "Legion"  # NFL
+team_name = "Send Nudes"  # NNBA
 # team_name = "The Bateleurs"  # NHL (2012)
 
 # set desired team ID within desired league
@@ -104,7 +106,7 @@ player_id = 7200  # NFL: Aaron Rodgers - 2020/2021
 # player_id = 9897  # MLB: Tim Anderson - 2021/2022
 
 # set the maximum number players you wish the get_league_players query to retrieve
-league_player_limit = 101
+league_player_limit = 300
 # league_player_limit = 2610
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -119,8 +121,8 @@ yahoo_query = YahooFantasySportsQuery(
     game_code=game_code,
     offline=False,
     all_output_as_json_str=False,
-    consumer_key=os.environ["YFPY_CONSUMER_KEY"],
-    consumer_secret=os.environ["YFPY_CONSUMER_SECRET"],
+    consumer_key=os.environ["dj0yJmk9YXZFMEM0eXVCY3RzJmQ9WVdrOVFrUmpSbEl5Um13bWNHbzlNQT09JnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTA4"],
+    consumer_secret=os.environ["fdd37ed408e522a27cb7119977c688be26569981"],
     browser_callback=True
 )
 
