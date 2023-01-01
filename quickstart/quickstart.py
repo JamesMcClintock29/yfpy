@@ -63,7 +63,7 @@ game_code = "NBA"  # NBA
 # game_id = 348  # NFL - 2015 (testing for league with divisions)
 # game_id = 390  # NFL - 2019
 # game_id = 399  # NFL - 2020
-game_id = 406  # NFL - 2021
+game_id = 400
 # game_id = 303  # NHL - 2012
 # game_id = 411  # NHL - 2021
 # game_id = 404  # MLB - 2021
@@ -95,18 +95,18 @@ team_id = 1  # NBA
 # team_id = 2  # NHL (2012)
 
 # set desired team name within desired league
-team_name = "Send Nudes"  # NNBA
+team_name = "Street Clothes"  # NNBA
 # team_name = "The Bateleurs"  # NHL (2012)
 
 # set desired team ID within desired league
-player_id = 7200  # NFL: Aaron Rodgers - 2020/2021
+player_id = 1  
 # player_id = 4588  # NHL: Braden Holtby - 2012
 # player_id = 8205  # NHL: Jeffrey Viel - 2021
 # player_id = 3637  # NHL: Alex Ovechkin - 2021
 # player_id = 9897  # MLB: Tim Anderson - 2021/2022
 
 # set the maximum number players you wish the get_league_players query to retrieve
-league_player_limit = 300
+league_player_limit = 100
 # league_player_limit = 2610
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -127,7 +127,7 @@ yahoo_query = YahooFantasySportsQuery(
 )
 
 # Manually override league key for example code to work
-yahoo_query.league_key = f"{game_id}.l.{league_id}"
+yahoo_query.53194 = f"{game_id}.l.{league_id}"
 
 # Manually override player key for example code to work
 player_key = f"{game_id}.p.{player_id}"
@@ -168,14 +168,14 @@ print(repr(yahoo_query.get_team_stats_by_week(team_id, chosen_week)))
 print(repr(yahoo_query.get_team_standings(team_id)))
 print(repr(yahoo_query.get_team_roster_by_week(team_id, chosen_week)))
 print(repr(yahoo_query.get_team_roster_player_info_by_week(team_id, chosen_week)))
-# print(repr(yahoo_query.get_team_roster_player_info_by_date(team_id, chosen_date)))  # NHL/MLB/NBA
+print(repr(yahoo_query.get_team_roster_player_info_by_date(team_id, chosen_date)))  # NHL/MLB/NBA
 print(repr(yahoo_query.get_team_roster_player_stats(team_id)))
 print(repr(yahoo_query.get_team_roster_player_stats_by_week(team_id, chosen_week)))
 print(repr(yahoo_query.get_team_draft_results(team_id)))
 print(repr(yahoo_query.get_team_matchups(team_id)))
 print(repr(yahoo_query.get_player_stats_for_season(player_key)))
 print(repr(yahoo_query.get_player_stats_by_week(player_key, chosen_week)))
-# print(repr(yahoo_query.get_player_stats_by_date(player_key, chosen_date)))  # NHL/MLB/NBA
+print(repr(yahoo_query.get_player_stats_by_date(player_key, chosen_date)))  # NHL/MLB/NBA
 print(repr(yahoo_query.get_player_ownership(player_key)))
 print(repr(yahoo_query.get_player_percent_owned_by_week(player_key, chosen_week)))
 print(repr(yahoo_query.get_player_draft_analysis(player_key)))
