@@ -27,10 +27,10 @@ Example vars using public Yahoo leagues still require auth through a personal Ya
 load_dotenv()
 
 # set directory location of private.json for authentication
-auth_dir = Path("C:\Users\James\Documents\GitHub\yfpyREAL\test\integration").parent
+auth_dir = Path(r'C:\Users\James\Documents\GitHub\yfpyREAL\test\integration').parent
 
 # set target directory for data output
-data_dir = Path("C:\Users\James\Documents\Yahoo Fantasy Data").parent / "output"
+data_dir = Path(r'C:\Users\James\Documents\Yahoo Fantasy Data').parent / "output"
 
 # create YFPY Data instance for saving/loading data
 data = Data(data_dir)
