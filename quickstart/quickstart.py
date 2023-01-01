@@ -127,7 +127,7 @@ yahoo_query = YahooFantasySportsQuery(
 )
 
 # Manually override league key for example code to work
-yahoo_query.53194 = f"{game_id}.l.{league_id}"
+yahoo_query.league_key = f"{game_id}.l.{league_id}"
 
 # Manually override player key for example code to work
 player_key = f"{game_id}.p.{player_id}"
