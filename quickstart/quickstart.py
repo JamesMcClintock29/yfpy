@@ -121,8 +121,8 @@ yahoo_query = YahooFantasySportsQuery(
     game_code=game_code,
     offline=False,
     all_output_as_json_str=False,
-    consumer_key=os.environ["YFPY_CONSUMER_KEY"],
-    consumer_secret=os.environ["YFPY_CONSUMER_SECRET"],
+    consumer_key=os.environ['YFPY_CONSUMER_KEY'],
+    consumer_secret=os.environ['YFPY_CONSUMER_SECRET'],
     browser_callback=True
 )
 
